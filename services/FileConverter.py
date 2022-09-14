@@ -52,6 +52,11 @@ def detect_delimiter(filename: str, n=5):
 class FileConverter:
     def __init__(self):
         root_dir = 'D:\\Work\\MNK_PRICES\\DB_FILES'
+        if os.path.exists(root_dir):
+            pass
+        else:
+            os.makedirs(root_dir)
+            print('The new directory was created\n')
         self.suppliers = os.listdir(root_dir)
 
     def convert_all(self):
