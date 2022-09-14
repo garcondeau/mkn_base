@@ -1,6 +1,7 @@
 import os
 import sqlite3 as sql
 
+
 class DbContext:
     def __init__(self):
         db_folder = './Database'

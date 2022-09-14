@@ -2,7 +2,7 @@ import threading
 import shutil
 from Services.DbService import *
 from Services.FtpConection import FtpConnection
-from Services.Extracter import Extracter
+from Services.Extractor import Extractor
 
 
 def run_parallel(func, data):
@@ -67,7 +67,7 @@ class DownloadProcessor:
 
         print('Extracting {} ...'.format(archive_path))
         try:
-            Extracter.extract_one(archive_path, out_dir, old_filename, new_filename)
+            Extractor.extract_one(archive_path, out_dir, old_filename, new_filename)
         except Exception as ex:
             print('Extracting file error\n{}'.format(ex))
 
@@ -88,4 +88,3 @@ class DownloadProcessor:
         if not os.path.exists(folder_path):
             os.makedirs(folder_path)
             print('folder created {}'.format(folder_path))
-

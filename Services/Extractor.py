@@ -4,7 +4,7 @@ import shutil
 import os
 
 
-class Extracter:
+class Extractor:
     @staticmethod
     def extract_one(archive_path, out_folder, old_filename, new_filename):
         old_filename_path = os.path.join(out_folder, old_filename)
