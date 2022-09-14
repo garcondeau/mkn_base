@@ -1,8 +1,8 @@
 import threading
 import shutil
-from Services.DbService import *
-from Services.FtpConection import FtpConnection
-from Services.Extractor import Extractor
+from services.DbService import *
+from services.FtpConection import FtpConnection
+from services.Extractor import Extractor
 
 
 def run_parallel(func, data):

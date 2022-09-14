@@ -156,7 +156,7 @@ cython_debug/
 Database/
 SqlScripts/InitialCreate/Insert/
 
-Services/__pycache__
+services/__pycache__
 .idea
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
